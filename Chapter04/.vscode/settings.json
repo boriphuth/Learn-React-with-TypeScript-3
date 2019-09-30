@@ -1,0 +1,56 @@
+{
+  "editor.minimap.enabled": false,
+  "explorer.openEditors.visible": 0,
+  "window.zoomLevel": 0,
+  "workbench.colorCustomizations": {},
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.suggestSelection": "first",
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "background": "#00b248",
+      "foreground": "#66ffa6",
+      "icon": "checklist",
+      "type": "text"
+    },
+    "FIXME": {
+      "background": "#c79400",
+      "foreground": "#fff64f",
+      "icon": "alert",
+      "type": "text"
+    }
+  },
+  "todo-tree.regex.regexCaseSensitive": false,
+  "todo-tree.filtering.excludeGlobs": ["**/node_modules/**"],
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "git.autofetch": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDelete": false,
+  "files.autoSave": "afterDelay",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "plantuml.render": "Local",
+  "plantuml.server": "http://localhost:8080",
+  "showGitMetrics": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "git.ignoreLimitWarning": true
+}

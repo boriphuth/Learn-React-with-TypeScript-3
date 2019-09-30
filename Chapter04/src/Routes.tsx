@@ -1,7 +1,7 @@
 import * as React from "react";
 
 // @ts-ignore
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 
 import {
   BrowserRouter as Router,
@@ -13,11 +13,12 @@ import {
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import Header from "./Header";
-const AdminPage = React.lazy(() => import("./AdminPage"));
 import ProductsPage from "./ProductsPage";
 import ProductPage from "./ProductPage";
 import LoginPage from "./LoginPage";
 import NotFoundPage from "./NotFoundPage";
+
+const AdminPage = lazy(() => import("./AdminPage"));
 
 const RoutesWrap: React.SFC = () => {
   return (
@@ -50,8 +51,8 @@ const Routes: React.SFC<RouteComponentProps> = props => {
                   <AdminPage />
                 </Suspense>
               ) : (
-                <Redirect to="/login" />
-              )}
+                  <Redirect to="/login" />
+                )}
             </Route>
             <Route path="/login" component={LoginPage} />
             <Route component={NotFoundPage} />
