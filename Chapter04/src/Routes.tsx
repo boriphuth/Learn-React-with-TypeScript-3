@@ -27,8 +27,8 @@ const RoutesWrap: React.SFC = () => {
     </Router>
   );
 };
-
 const Routes: React.SFC<RouteComponentProps> = props => {
+  // eslint-disable-next-line 
   const [loggedIn, setLoggedIn] = React.useState(true);
   return (
     <div>
