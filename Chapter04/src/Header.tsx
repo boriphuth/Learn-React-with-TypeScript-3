@@ -6,8 +6,8 @@ import logo from "./logo.svg";
 const Header: React.SFC<RouteComponentProps> = props => {
   const [search, setSearch] = React.useState("");
   React.useEffect(() => {
-    const searchParams = new URLSearchParams(props.location.search);
-    setSearch(searchParams.get("search") || "");
+    // const searchParams = new URLSearchParams(props.location.search);
+    // setSearch(searchParams.get("search") || "");
   }, []);
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
