@@ -1,0 +1,13 @@
+{
+  "name": "advancetypescript",
+  "version": "1.0.0",
+  "main": "noope",
+  "license": "1.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  }
+}
